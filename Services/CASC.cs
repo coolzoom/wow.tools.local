@@ -223,12 +223,12 @@ namespace wow.tools.local.Services
             
             if (File.Exists("listfile.csv"))
             {
-                var info = new FileInfo("listfile.csv");
-                if (info.Length == 0 || DateTime.Now.Subtract(TimeSpan.FromDays(1)) > info.LastWriteTime)
-                {
-                    Console.WriteLine("Listfile outdated, redownloading..");
-                    download = true;
-                }
+                //var info = new FileInfo("listfile.csv");
+                //if (info.Length == 0 || DateTime.Now.Subtract(TimeSpan.FromDays(30)) > info.LastWriteTime)
+                //{
+                //    Console.WriteLine("Listfile outdated, redownloading..");
+                //    download = true;
+                //}
             }
             else
             {
@@ -299,12 +299,12 @@ namespace wow.tools.local.Services
             var download = forceRedownload;
             if (File.Exists("TactKey.csv"))
             {
-                var info = new FileInfo("TactKey.csv");
-                if (info.Length == 0 || DateTime.Now.Subtract(TimeSpan.FromDays(1)) > info.LastWriteTime)
-                {
-                    Console.WriteLine("TACT Keys outdated, redownloading..");
-                    download = true;
-                }
+                //var info = new FileInfo("TactKey.csv");
+                //if (info.Length == 0 || DateTime.Now.Subtract(TimeSpan.FromDays(1)) > info.LastWriteTime)
+                //{
+                //    Console.WriteLine("TACT Keys outdated, redownloading..");
+                //    download = true;
+                //}
             }
             else
             {
